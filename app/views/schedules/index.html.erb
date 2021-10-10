@@ -7,12 +7,12 @@
 <table>
   <thead>
     <tr>
-      <th>ID</th>
-      <th>タイトル</th>
-      <th>開始日</th>
-      <th>終了日</th>
+      <th><%= sort_link(@q, :id, "ID") %></th>
+      <th><%= sort_link(@q, :title, "タイトル") %></th>
+      <th><%= sort_link(@q, :start, "開始日") %></th>
+      <th><%= sort_link(@q, :end, "終了日") %></th>
       <th>終日</th>
-      <th>スケジュール更新日時</th>
+      <th><%= sort_link(@q, :updated_at, "スケジュール更新日時") %></th>
       <th>確認</th>
       <th>編集</th>
       <th>削除</th>

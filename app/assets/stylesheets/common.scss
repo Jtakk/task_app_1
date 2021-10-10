@@ -53,16 +53,26 @@ table td {
   background-color: #CBFFD3;
   border: solid 1px #00FF3B;
   padding: 10px;
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
+  width: auto;
 }
 
 .error {
   color: red;
-  background-color: #ffffcc;
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
+  width: auto;
   margin-bottom: 20px;
+}
+
+textarea {
+  width: 350px;
+  height: 200px;
+  font-size: 16px;
+}
+
+input {
+  width: 100%;
+  font-size: 18px;
+}
+
+.button {
+  width: auto;
 }

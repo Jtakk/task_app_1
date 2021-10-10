@@ -1,7 +1,9 @@
 class SchedulesController < ApplicationController
   
   def index
-    @schedules = Schedule.all
+    #@schedules = Schedule.all
+    @q = Schedule.ransack(params[:q]) #ransackを導入してソート機能を実装
+    @schedules = @q.result
   end
   
   def new
